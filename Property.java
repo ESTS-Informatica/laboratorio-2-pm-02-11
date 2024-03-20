@@ -1,5 +1,3 @@
-
-
 /**
  * A property to sell.
  *
@@ -21,8 +19,8 @@ public class Property {
      */
     public Property(String description, double price) {
         this.description = description;
-        this.price = 0.0;
-        this.id = -1;
+        this.price = price;
+        this.id = ++numberOfProperties;
     }
 
     /**
@@ -52,7 +50,7 @@ public class Property {
      * Price selector.
      */
     public double getPrice() {
-        return price;
+        return this.price;
     }
     
     /**
@@ -61,7 +59,9 @@ public class Property {
      * @param price The new price. Must not be negative.
      */
     public void setPrice(double price) {
+        if(price>0){
         this.price = price;
+    }
     }
 
     @Override
