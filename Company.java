@@ -24,7 +24,8 @@ public class Company {
      * Constructor of class Company
      */
     public Company() {
-
+        this.sellers = sellers;
+        this.clients = clients;
     }
 
     /**

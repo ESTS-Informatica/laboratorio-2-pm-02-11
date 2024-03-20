@@ -4,6 +4,8 @@ import org.junit.Test;
 public class PropertyTest 
 {
 
+    private Property property1;
+    
     @Test
     public void setUp() {
         Property property1 = new Property("T3 Monte Belo", 150000.0); // Fixture
