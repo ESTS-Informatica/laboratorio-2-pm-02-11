@@ -29,22 +29,14 @@ public class Property {
      * Id selector.
      */
     public int getId() {
-        if(id != 0){
-            return id;
-        }else{
-            return -1;
-        }
+        return this.id;
     }
 
     /**
      * Description selector.
      */
     public String getDescription() {
-        if(description != null){
-            return description;
-        }else{
-            return null;
-        }
+            return this.description;
     }
 
     /**
